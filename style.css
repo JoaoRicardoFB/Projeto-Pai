@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'texto';
+    src: url(Fontes/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url(Fontes/Alex_Brush/AlexBrush-Regular.ttf);
+}
+
+:root {
+    
+    --cor1: #CDF7F6; /*cor do body*/
+    --cor2: #8FB8DE; /*cor do main*/
+    --cor3: #275DAD; /*cor do header*/
+    --cor4: #1465bb;
+
+    --texto: 'texto'; 
+    --titulo: 'titulo';
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    font-size: 4.5em;
+}
+
+header > h1 {
+    font-family: var(--titulo);
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--cor2);
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+p  a {
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+}
+
+p > a:hover {
+    background-color: var(--cor3);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+main {
+    background-color: var(--cor2);
+    margin: auto;
+    margin-top: 20px;
+    max-width: 1000px;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+main p {
+    text-align: justify;
+    font-size: 1.3em;
+    font-family: var(--texto);
+    text-indent: 15px;
+    padding: 10px;
+}
+
+main h1 {
+    text-indent: 10px;
+    background-image: linear-gradient(to right, var(--cor4), var(--cor2));
+    border-radius: 5px;
+    font-family: var(--titulo);
+    font-size: 2.5em;
+}
+
+img {
+    border-radius: 10px;
+}
+
+mark {
+    background-color: var(--cor4);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--cor2);
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}   
+
